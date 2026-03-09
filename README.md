@@ -1,88 +1,33 @@
----
-dataset_info:
-  features:
-  - name: title
-    dtype: string
-  - name: artist
-    dtype: string
-  - name: tag
-    dtype: string
-  - name: year
-    dtype: int64
-  - name: lyrics
-    dtype: string
-  splits:
-  - name: train
-    num_bytes: 4847179321
-    num_examples: 3179588
-  download_size: 2558825005
-  dataset_size: 4847179321
-configs:
-- config_name: default
-  data_files:
-  - split: train
-    path: data/train-*
-license: mit
-language:
-- en
-pretty_name: Genius English Song Lyrics – Cleaned & Deduplicated
-task_categories:
-- text-generation
-task_ids:
-- language-modeling
-tags:
-- lyrics
-- music
-- songs
-- rap
-- trap
-- pop
-- rb
-- rock
-- country
-- metal
-- folk
-- jazz
-- indie
-- electronic
-- reggae
-- soul
-- blues
-- english
-- fine-tuning
-- causal-lm
-- conditional-generation
-- song-generation
-- creative-writing
-- nlp
-- cleaned
-size_categories:
-- 1M<n<10M
-source_datasets:
-- carlosgdcj/genius-song-lyrics-with-language-information
----
-
 # Genius English Song Lyrics – Cleaned & Deduplicated
 
 A heavily cleaned, English-only, genre-filtered subset of the [Genius Song Lyrics with Language Information](https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information) Kaggle dataset. Reduced from **9+ GB to 2.56 GB** through language filtering, genre filtering, artifact removal, and deduplication. Optimized for language model fine-tuning, lyric generation, and music NLP research.
 
 - **No train/validation/test splits**: This dataset ships as a single `train` split. You should create validation and test splits appropriate to downstream task
 
----
-
-## Dataset Description
+|            DOI           | Revision |
+|:------------------------:|:--------:|
+| 10.57967/hf/7978 Current | 9742989  |
 
 ### Overview
 
 The raw Genius dataset contains millions of song entries across dozens of languages, genres, and quality levels — including non-music content like poetry, book excerpts, and miscellaneous text tagged as `misc`. This cleaned version retains only **English-language songs from verified music genres**, with lyrics scrubbed of Genius UI artifacts, HTML residue, and duplicates. The result is a high-signal corpus suitable for causal language model pretraining or supervised fine-tuning on lyric generation tasks.
 
-### Languages
+### Dataset Stats
 
-- **English only** (`language == 'en'`)
+| Metric | Value |
+|---|---|
+| Total rows | 3,179,588 |
+| Dataset size | ~4.51 GB |
+| Download size | ~2.38 GB |
+| Split | train only |
+| Path | data/train-* |
+| num_bytes | 4847179321 |
+| num_examples | 3179588 |
+| task_categories | text-generation |
+| task_ids | language-modeling |
+| size_categories | 1M<n<10M |
 
----
-
-## Cleaning Pipeline
+### Cleaning Pipeline
 
 The following steps were applied in order:
 
@@ -98,11 +43,7 @@ The following steps were applied in order:
 7. **Exact deduplication** — Removed entries with identical cleaned lyrics.
 8. **Near-deduplication** — For entries sharing the same `artist` + `title`, retained the version with the highest view count.
 
----
-
-## Dataset Structure
-
-### Data Fields
+### Dataset Structure
 
 | Field    | Type    | Description                                                                 |
 |----------|---------|-----------------------------------------------------------------------------|
@@ -112,13 +53,11 @@ The following steps were applied in order:
 | `year`   | float64 | Release year (may be `NaN` for entries with missing metadata)              |
 | `lyrics` | string  | Cleaned, deduplicated song lyrics with normalized section headers           |
 
-### Genre Tags (`tag` column)
-
 The dataset includes the following 15 genre values:
 
 `rap` · `trap` · `pop` · `rb` · `rock` · `country` · `metal` · `folk` · `jazz` · `indie` · `electronic` · `reggae` · `soul` · `blues` · `latin`
 
-## Training Format
+### Training Format
 
 Each row's `lyrics` field contains plain cleaned lyrics with normalized section headers (`[Verse 1]`, `[Chorus]`, `[Bridge]`, etc.). For models that benefit from soft conditioning, you can reconstruct a prompt-formatted version of each example at training time:
 
@@ -136,49 +75,31 @@ def format_training_example(row):
 
 This soft-conditioning format allows models to learn genre, artist, and era as implicit style tokens without hard task prefixes.
 
----
-
-## Token Length Distribution
+### Token Length Distribution
 
 Based on word-count proxies measured during cleaning:
 - The **majority of entries fall under 512 words**, making this dataset well-suited for models with a 512–1024 token context window.
 - Setting `max_seq_length=1024` in your training configuration captures the vast majority of examples without truncation.
 
----
-
-## Source Data
-
-### Original Dataset
-
-- **Source**: [Genius Song Lyrics with Language Information](https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information) by [carlosgdcj](https://www.kaggle.com/carlosgdcj) on Kaggle
-- **Original size**: ~9+ GB (CSV)
-- **Cleaned size**: ~2.56 GB
+> **Sources:**  
+> [`carlosgdcj/genius-song-lyrics-with-language-information`](https://huggingface.co/datasets/carlosgdcj/genius-song-lyrics-with-language-information) ~9+ GB (CSV)  
+>[theelderemo/genius-lyrics-cleaned](https://huggingface.co/datasets/theelderemo/genius-lyrics-cleaned) ~2.56 GB
 
 The original dataset was collected by scraping [Genius.com](https://genius.com) and includes language detection metadata alongside raw lyrics. It contains entries across many languages and content types.
 
-### Curation Rationale
+### Curation
 
 The raw dataset is large and noisy. The `misc` category alone contributes a significant portion of non-music content. Language diversity, while useful for multilingual tasks, is a source of noise for English-only modeling. This cleaned version was created specifically to provide a **high-quality, ready-to-train English lyric corpus** that does not require additional preprocessing.
 
----
-
-## Authors & Contact
-
-- **theelderemo** 
-- Open an issue or discussion on this repository for questions, corrections, or collaboration requests.
-
----
-
-## Citation
-
-If you use this dataset in research or a project, please cite both the upstream Kaggle source and this repository:
+### Citation
 
 ```bibtex
-@misc{genius_lyrics_cleaned_2026,
-  author       = {theelderemo},
-  title        = {Genius English Song Lyrics – Cleaned \& Deduplicated},
-  year         = {2026},
-  publisher    = {Hugging Face},
-  howpublished = {\url{https://huggingface.co/datasets/theelderemo/genius-lyrics-cleaned}},
-  note         = {Derived from \url{https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information}}
+@misc{christopher_dickinson_2026,
+	author       = { Christopher Dickinson },
+	title        = { genius-lyrics-cleaned (Revision 9742989) },
+	year         = 2026,
+	url          = { https://huggingface.co/datasets/theelderemo/genius-lyrics-cleaned },
+	doi          = { 10.57967/hf/7978 },
+	publisher    = { Hugging Face }
 }
+```
