@@ -1,4 +1,5 @@
-# Genius English Song Lyrics – Cleaned & Deduplicated
+# Genius English Song Lyrics – Cleaned & Deduplicated  
+- [Hugging Face Dataset](https://huggingface.co/datasets/theelderemo/genius-lyrics-cleaned)
 
 A heavily cleaned, English-only, genre-filtered subset of the [Genius Song Lyrics with Language Information](https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information) Kaggle dataset. Reduced from **9+ GB to 2.56 GB** through language filtering, genre filtering, artifact removal, and deduplication. Optimized for language model fine-tuning, lyric generation, and music NLP research.
 
