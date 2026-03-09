@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 20" width="100%">
+  <text x="0" y="14" font-family="Fira Code, Consolas, monospace" font-size="13" fill="#8b949e">This soft-conditioning format allows models to learn genre, artist, and era as implicit style tokens without hard task prefixes.</text>
+</svg>

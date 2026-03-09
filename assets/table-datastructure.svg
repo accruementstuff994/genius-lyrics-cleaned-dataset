@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 182" width="100%">
+  <rect x="0" y="0" width="800" height="28" rx="4" fill="#7C3AED" opacity="0.12"/>
+  <text x="20" y="19" font-family="Fira Code, Consolas, monospace" font-size="13" font-weight="700" fill="#7C3AED">Field</text>
+  <text x="140" y="19" font-family="Fira Code, Consolas, monospace" font-size="13" font-weight="700" fill="#7C3AED">Type</text>
+  <text x="280" y="19" font-family="Fira Code, Consolas, monospace" font-size="13" font-weight="700" fill="#7C3AED">Description</text>
+  <line x1="0" y1="28" x2="800" y2="28" stroke="#7C3AED" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="20"  y="52"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">title</text>
+  <text x="140" y="52"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#7C3AED">string</text>
+  <text x="280" y="52"  font-family="Fira Code, Consolas, monospace" font-size="11" fill="#8b949e">Song title as listed on Genius</text>
+  <line x1="0" y1="60" x2="800" y2="60" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="82"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">artist</text>
+  <text x="140" y="82"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#7C3AED">string</text>
+  <text x="280" y="82"  font-family="Fira Code, Consolas, monospace" font-size="11" fill="#8b949e">Primary artist name</text>
+  <line x1="0" y1="90" x2="800" y2="90" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="112" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">tag</text>
+  <text x="140" y="112" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#7C3AED">string</text>
+  <text x="280" y="112" font-family="Fira Code, Consolas, monospace" font-size="11" fill="#8b949e">Genre tag (one of 15 values; see below)</text>
+  <line x1="0" y1="120" x2="800" y2="120" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="142" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">year</text>
+  <text x="140" y="142" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#7C3AED">float64</text>
+  <text x="280" y="142" font-family="Fira Code, Consolas, monospace" font-size="11" fill="#8b949e">Release year (may be NaN for entries with missing metadata)</text>
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="172" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">lyrics</text>
+  <text x="140" y="172" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#7C3AED">string</text>
+  <text x="280" y="172" font-family="Fira Code, Consolas, monospace" font-size="11" fill="#8b949e">Cleaned, deduplicated lyrics with normalized section headers</text>
+  <line x1="0" y1="182" x2="800" y2="182" stroke="#7C3AED" stroke-opacity="0.3" stroke-width="1"/>
+</svg>

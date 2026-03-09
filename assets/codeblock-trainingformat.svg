@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 210" width="100%">
+  <rect x="0" y="0" width="800" height="210" rx="6" fill="#161b22"/>
+  <rect x="0" y="0" width="800" height="24" rx="6" fill="#1c2129"/>
+  <rect x="0" y="12" width="800" height="12" fill="#1c2129"/>
+  <circle cx="16" cy="12" r="5" fill="#cc0033" opacity="0.8"/>
+  <circle cx="34" cy="12" r="5" fill="#e6a700" opacity="0.8"/>
+  <circle cx="52" cy="12" r="5" fill="#3fb950" opacity="0.8"/>
+  <text x="780" y="16" font-family="Fira Code, Consolas, monospace" font-size="10" fill="#8b949e" text-anchor="end">python</text>
+  <text x="20" y="46"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#ff7b72">def</text>
+  <text x="50" y="46"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#d2a8ff">format_training_example</text>
+  <text x="226" y="46" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">(row):</text>
+  <text x="40" y="66"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">year = </text>
+  <text x="100" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#79c0ff">int</text>
+  <text x="124" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">(row[</text>
+  <text x="160" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#a5d6ff">'year'</text>
+  <text x="206" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">]) </text>
+  <text x="224" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#ff7b72">if</text>
+  <text x="244" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3"> pd.notna(row[</text>
+  <text x="352" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#a5d6ff">'year'</text>
+  <text x="398" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">]) </text>
+  <text x="416" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#ff7b72">else</text>
+  <text x="452" y="66" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#a5d6ff"> 'Unknown'</text>
+  <text x="40" y="86"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">header = (</text>
+  <text x="60" y="106" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#a5d6ff">f"[Genre: {row['tag']}]\n"</text>
+  <text x="60" y="126" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#a5d6ff">f"[Artist: {row['artist']}]\n"</text>
+  <text x="60" y="146" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#a5d6ff">f"[Year: {year}]\n"</text>
+  <text x="60" y="166" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#a5d6ff">f"[Title: {row['title']}]\n\n"</text>
+  <text x="40" y="186" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">)</text>
+  <text x="40" y="202" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#ff7b72">return</text>
+  <text x="90" y="202" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">header + row[</text>
+  <text x="192" y="202" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#a5d6ff">'lyrics'</text>
+  <text x="248" y="202" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">]</text>
+</svg>

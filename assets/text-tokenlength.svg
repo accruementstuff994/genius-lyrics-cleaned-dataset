@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 56" width="100%">
+  <text x="0" y="16" font-family="Fira Code, Consolas, monospace" font-size="13" fill="#e6edf3">Based on word-count proxies measured during cleaning:</text>
+  <text x="14" y="36" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">" The majority of entries fall under 512 words, well-suited for 512-1024 token context windows.</text>
+  <text x="14" y="52" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">" Setting max_seq_length=1024 captures the vast majority of examples without truncation.</text>
+</svg>

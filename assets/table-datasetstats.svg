@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 332" width="100%">
+  <rect x="0" y="0" width="800" height="28" rx="4" fill="#7C3AED" opacity="0.12"/>
+  <text x="20" y="19" font-family="Fira Code, Consolas, monospace" font-size="13" font-weight="700" fill="#7C3AED">Metric</text>
+  <text x="320" y="19" font-family="Fira Code, Consolas, monospace" font-size="13" font-weight="700" fill="#7C3AED">Value</text>
+  <line x1="0" y1="28" x2="800" y2="28" stroke="#7C3AED" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="20"  y="52"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">Total rows</text>
+  <text x="320" y="52"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">3,179,588</text>
+  <line x1="0" y1="60" x2="800" y2="60" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="82"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">Dataset size</text>
+  <text x="320" y="82"  font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">~4.51 GB</text>
+  <line x1="0" y1="90" x2="800" y2="90" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="112" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">Download size</text>
+  <text x="320" y="112" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">~2.38 GB</text>
+  <line x1="0" y1="120" x2="800" y2="120" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="142" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">Split</text>
+  <text x="320" y="142" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">train only</text>
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="172" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">Path</text>
+  <text x="320" y="172" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">data/train-*</text>
+  <line x1="0" y1="180" x2="800" y2="180" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="202" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">num_bytes</text>
+  <text x="320" y="202" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">4847179321</text>
+  <line x1="0" y1="210" x2="800" y2="210" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="232" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">num_examples</text>
+  <text x="320" y="232" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">3179588</text>
+  <line x1="0" y1="240" x2="800" y2="240" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="262" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">task_categories</text>
+  <text x="320" y="262" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">text-generation</text>
+  <line x1="0" y1="270" x2="800" y2="270" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="292" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">task_ids</text>
+  <text x="320" y="292" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">language-modeling</text>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#30363d" stroke-width="0.5"/>
+  <text x="20"  y="322" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e">size_categories</text>
+  <text x="320" y="322" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#e6edf3">1M&lt;n&lt;10M</text>
+  <line x1="0" y1="332" x2="800" y2="332" stroke="#7C3AED" stroke-opacity="0.3" stroke-width="1"/>
+</svg>

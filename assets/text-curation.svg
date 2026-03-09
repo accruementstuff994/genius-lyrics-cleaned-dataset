@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 56" width="100%">
+  <text x="0" y="16" font-family="Fira Code, Consolas, monospace" font-size="13" fill="#e6edf3">The raw dataset is large and noisy. The misc category alone contributes a significant portion of</text>
+  <text x="0" y="36" font-family="Fira Code, Consolas, monospace" font-size="13" fill="#e6edf3">non-music content. Language diversity, while useful for multilingual tasks, is a source of noise for</text>
+  <text x="0" y="52" font-family="Fira Code, Consolas, monospace" font-size="13" fill="#e6edf3">English-only modeling. This cleaned version provides a high-quality, ready-to-train English lyric corpus.</text>
+</svg>

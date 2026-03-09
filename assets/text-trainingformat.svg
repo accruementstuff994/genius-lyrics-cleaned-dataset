@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 48" width="100%">
+  <text x="0" y="16" font-family="Fira Code, Consolas, monospace" font-size="13" fill="#e6edf3">Each row's lyrics field contains plain cleaned lyrics with normalized section headers</text>
+  <text x="0" y="36" font-family="Fira Code, Consolas, monospace" font-size="13" fill="#e6edf3">([Verse 1], [Chorus], [Bridge], etc.). For models that benefit from soft conditioning,</text>
+  <text x="0" y="48" font-family="Fira Code, Consolas, monospace" font-size="13" fill="#e6edf3">you can reconstruct a prompt-formatted version of each example at training time:</text>
+</svg>

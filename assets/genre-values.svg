@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" width="100%">
+  <text x="400" y="16" font-family="Fira Code, Consolas, monospace" font-size="12" fill="#8b949e" text-anchor="middle">The dataset includes the following 15 genre values:</text>
+  <text x="400" y="46" font-family="Fira Code, Consolas, monospace" font-size="13" fill="#7C3AED" text-anchor="middle">rap, trap, pop, rb, rock, country, metal, folk, jazz, indie, electronic, reggae, soul, blues, latin</text>
+</svg>
