@@ -162,13 +162,10 @@ The raw dataset is large and noisy. The `misc` category alone contributes a sign
 
 ---
 
-## Dataset Card Authors
+## Authors & Contact
 
-- **theelderemo** — Cleaning, filtering, and Hugging Face upload
-
-## Dataset Card Contact
-
-Open an issue or discussion on this repository for questions, corrections, or collaboration requests.
+- **theelderemo** 
+- Open an issue or discussion on this repository for questions, corrections, or collaboration requests.
 
 ---
 
